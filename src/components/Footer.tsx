@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import React from "react";
-import { ArrowRight, Twitter, Linkedin, Youtube, Instagram, Mail, Phone, MapPin, Globe } from "lucide-react";
+import { MaterialIcon } from "./MaterialIcon";
 
 const Footer = () => {
   return (
@@ -28,21 +28,21 @@ const Footer = () => {
                 href="/contact"
               >
                 Make an enquiry
-                <ArrowRight className="ml-2 w-4 h-4" />
+                <MaterialIcon name="arrow_forward" className="ml-2 text-base" />
               </Link>
               {/* Social icons row */}
               <div className="flex space-x-4">
                 <a href="#" className="text-gray-400 hover:text-teexho-blue" aria-label="Twitter/X">
-                  <Twitter className="w-6 h-6" />
+                  <MaterialIcon name="share" className="text-[24px]" />
                 </a>
                 <a href="#" className="text-gray-400 hover:text-teexho-blue" aria-label="LinkedIn">
-                  <Linkedin className="w-6 h-6" />
+                  <MaterialIcon name="business_center" className="text-[24px]" />
                 </a>
                 <a href="#" className="text-gray-400 hover:text-teexho-blue" aria-label="YouTube">
-                  <Youtube className="w-6 h-6" />
+                  <MaterialIcon name="play_circle" className="text-[24px]" />
                 </a>
                 <a href="#" className="text-gray-400 hover:text-teexho-blue" aria-label="Instagram">
-                  <Instagram className="w-6 h-6" />
+                  <MaterialIcon name="photo_camera" className="text-[24px]" />
                 </a>
               </div>
             </div>

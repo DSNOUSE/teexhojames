@@ -5,3 +5,5 @@ export { Card } from './Card';
 export { Button } from './Button';
 export { Grid } from './Grid';
 export { SectionHeader } from './SectionHeader';
+export { MaterialIcon } from './MaterialIcon';
+export { BackToTop } from './BackToTop';

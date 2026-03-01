@@ -14,7 +14,7 @@ export function Hero() {
                 Less friction. More flow.
               </h1>
               <p className="hero-description text-xl md:text-2xl text-blue-100 leading-relaxed">
-                Connecting Nigerian students to world-class education opportunities across the UK and Europe, while delivering cutting-edge digital solutions for businesses.
+                Bringing African learners together worldwide while delivering cutting edge digital solutions for businesses.
               </p>
             </div>
             

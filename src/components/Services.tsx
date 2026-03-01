@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "./Button";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { MaterialIcon } from "./MaterialIcon";
 
 export function Services() {
   return (
@@ -58,17 +58,17 @@ export function Services() {
           <div className="flex justify-end mb-8">
             <div className="flex gap-2">
               <button className="p-2 rounded-full bg-white shadow-md hover:shadow-lg transition-shadow">
-                <ChevronLeft className="w-5 h-5 text-gray-600" />
+                <MaterialIcon name="chevron_left" className="text-xl text-gray-600" />
               </button>
               <button className="p-2 rounded-full bg-white shadow-md hover:shadow-lg transition-shadow">
-                <ChevronRight className="w-5 h-5 text-gray-600" />
+                <MaterialIcon name="chevron_right" className="text-xl text-gray-600" />
               </button>
             </div>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             {/* Growth Enablement */}
-            <div>
+            <div className="service-card">
               <div className="relative h-64 mb-6">
                 <Image
                   src="/images/Create image of a female African student who have gained University admission through Teexo James Educational Consulting service.jpg"
@@ -89,7 +89,7 @@ export function Services() {
             </div>
 
             {/* Strategy */}
-            <div>
+            <div className="service-card">
               <div className="relative h-64 mb-6">
                 <Image
                   src="/images/Imagine an image of people doing IT Consulting for Teexho James Consulting..jpg"
@@ -110,7 +110,7 @@ export function Services() {
             </div>
 
             {/* Technology */}
-            <div>
+            <div className="service-card">
               <div className="relative h-64 mb-6">
                 <Image
                   src="/images/Imagine working gears in a corporate environment.jpg"

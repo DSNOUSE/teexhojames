@@ -16,6 +16,16 @@ body {
   line-height: 1.6;
 }
 
+.material-symbols-rounded {
+  font-family: "Material Symbols Rounded", sans-serif;
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  display: inline-flex;
+  line-height: 1;
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
 .container {
   width: 100%;
   max-width: 1400px;

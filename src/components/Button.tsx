@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { ChevronRight } from 'lucide-react';
+import { MaterialIcon } from './MaterialIcon';
 
 interface ButtonProps {
   children: React.ReactNode;
@@ -49,8 +49,9 @@ export function Button({
     return (
       <Link href={href} className={classes}>
         {children}
-        <ChevronRight 
-          className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" 
+        <MaterialIcon
+          name="chevron_right"
+          className="text-base transition-transform duration-300 group-hover:translate-x-1"
         />
       </Link>
     );
@@ -64,8 +65,9 @@ export function Button({
       disabled={disabled}
     >
       {children}
-      <ChevronRight 
-        className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" 
+      <MaterialIcon
+        name="chevron_right"
+        className="text-base transition-transform duration-300 group-hover:translate-x-1"
       />
     </button>
   );
