@@ -70,8 +70,8 @@ export default function AboutClient() {
             ))}
           </div>
           <div className="container h-full">
-            <div className="min-h-[600px] relative z-10 flex items-end justify-start">
-              <div className="max-w-4xl pb-12 pl-8">
+            <div className="min-h-[520px] sm:min-h-[600px] relative z-10 flex items-end justify-start">
+              <div className="max-w-4xl pb-10 px-6 sm:px-8 md:px-0 md:pl-8 text-center md:text-left">
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 bg-gradient-to-r from-white via-blue-100 to-blue-200 bg-clip-text text-transparent">
                   Shaping smarter business, everywhere
                 </h1>
@@ -83,28 +83,35 @@ export default function AboutClient() {
           </div>
         </section>
 
-        <Section padding="lg" className="relative overflow-hidden">
-          <div className="relative z-10 space-y-6 md:pr-[45%]">
-            <SectionHeader
-              title="Our purpose is your progress"
-              description="Better connected, more productive, and energised to do business in any market."
-              centered={false}
-              className="mb-4"
-            />
-            <p className="text-lg text-gray-600 leading-relaxed">
-              Customer satisfaction built on trust and results. We believe in creating lasting partnerships that drive
-              sustainable growth for our clients through tailored solutions that address their unique challenges.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button href="/contact" variant="primary">
-                Start your journey
-              </Button>
+        <Section padding="lg" className="relative overflow-hidden pb-0 md:pb-24">
+          <div className="flex flex-col min-h-[560px] md:block">
+            <div className="relative z-10 space-y-6 pr-0 md:pr-[45%]">
+              <SectionHeader
+                title="Our purpose is your progress"
+                description="Better connected, more productive, and energised to do business in any market."
+                centered={false}
+                className="mb-4"
+              />
+              <p className="text-lg text-gray-600 leading-relaxed">
+                Customer satisfaction built on trust and results. We believe in creating lasting partnerships that drive
+                sustainable growth for our clients through tailored solutions that address their unique challenges.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button href="/contact" variant="primary">
+                  Start your journey
+                </Button>
+              </div>
             </div>
-          </div>
 
-          <div className="absolute inset-0 flex items-end justify-end pointer-events-none">
-            <div className="relative w-full h-full max-h-[520px] md:max-h-none md:w-[45%]">
-              <Image src="/images/Teexho-Exec-Male.png" alt="Business Strategy" fill className="object-contain object-bottom" />
+            <div className="mt-auto md:mt-0 md:absolute md:inset-0 md:flex md:items-end md:justify-end pointer-events-none">
+              <div className="relative w-full h-96 sm:h-[420px] md:h-full md:max-h-[520px] md:w-[45%] translate-y-3 md:translate-y-0">
+                <Image
+                  src="/images/Teexho-Exec-Male.png"
+                  alt="Business Strategy"
+                  fill
+                  className="object-contain object-bottom"
+                />
+              </div>
             </div>
           </div>
         </Section>

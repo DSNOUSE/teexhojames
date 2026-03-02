@@ -7,33 +7,42 @@ export function Services() {
   return (
     <>
       {/* Introduction Section */}
-      <section className="services-intro py-24" style={{backgroundColor: '#153937'}}>
-        <div className="container">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            {/* Left Column - Image */}
-            <div className="relative">
-              <Image
-                src="/images/Imagine working gears in a corporate environment.jpg"
-                alt="Corporate Environment - Working Gears"
-                width={600}
-                height={400}
-                className="rounded-lg shadow-lg border-1-5 border-teexho-blue"
-              />
-            </div>
-
-            {/* Right Column - Content */}
-            <div className="text-center md:text-left">
-              <h2 className="section-title text-4xl font-bold text-white mb-4">
-                <span style={{color: '#fff'}}>Empowering Your Journey</span>
-              </h2>
-              <p className="section-description text-xl text-blue-100 mb-8">
-                From classroom to boardroom, we bridge the gap between ambition and achievement with tailored solutions for students and businesses alike.
+      <section className="services-intro relative overflow-hidden py-20 sm:py-24" style={{ backgroundColor: "#153937" }}>
+        <div className="absolute inset-0">
+          <div className="absolute -top-24 -right-24 h-72 w-72 rounded-full bg-white/10 blur-3xl" />
+          <div className="absolute -bottom-24 -left-16 h-72 w-72 rounded-full bg-teexho-blue/20 blur-3xl" />
+        </div>
+        <div className="container relative z-10">
+          <div className="grid gap-12 lg:grid-cols-[1.1fr_0.9fr] items-center">
+            {/* Copy */}
+            <div className="text-left">
+              <p className="text-sm uppercase tracking-[0.2em] text-blue-100/80 mb-4">
+                Consulting for real momentum
               </p>
-              
-              {/* Call to Action */}
+              <h2 className="text-4xl md:text-5xl font-bold text-white leading-tight mb-4">
+                Clear strategy. Confident execution.
+              </h2>
+              <p className="text-lg md:text-xl text-blue-100 leading-relaxed mb-8 max-w-xl">
+                We help students and businesses move from ambition to action with focused guidance, practical delivery,
+                and measurable outcomes.
+              </p>
               <Button href="/contact" variant="primary-white">
                 Start Your Journey Today
               </Button>
+            </div>
+
+            {/* Image */}
+            <div className="relative">
+              <div className="relative aspect-[4/3] w-full overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3 shadow-2xl">
+                <div className="relative h-full w-full overflow-hidden rounded-2xl">
+                  <Image
+                    src="/images/Imagine working gears in a corporate environment.jpg"
+                    alt="Corporate Environment - Working Gears"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
