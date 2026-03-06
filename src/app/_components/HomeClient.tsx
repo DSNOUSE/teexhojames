@@ -16,8 +16,8 @@ const featureItems = [
     title: "Proven Success",
     content: (
       <p className="text-gray-600">
-        <span className="counter" data-target="500">0</span>+ students successfully placed in top universities and{" "}
-        <span className="counter" data-target="100">0</span>+ digital projects delivered with excellence.
+        <span className="counter" data-target="500">0</span> students successfully placed in top universities and{" "}
+        <span className="counter" data-target="100">0</span> digital projects delivered with excellence.
       </p>
     ),
     icon: "check_circle",

@@ -32,17 +32,20 @@ const Footer = () => {
               </Link>
               {/* Social icons row */}
               <div className="flex space-x-4">
-                <a href="#" className="text-gray-400 hover:text-teexho-blue" aria-label="Twitter/X">
-                  <MaterialIcon name="share" className="text-[24px]" />
+                <a href="https://x.com/teexhojamescons" className="text-gray-400 hover:text-teexho-blue" aria-label="X">
+                  <svg aria-hidden="true" viewBox="0 0 24 24" className="h-6 w-6 fill-current">
+                    <path d="M18.244 2H21l-6.43 7.354L22 22h-6.64l-4.9-6.43L4.8 22H2l6.9-7.9L2 2h6.8l4.5 5.92L18.244 2zm-1.18 18h1.84L7 4h-1.9l11.964 16z" />
+                  </svg>
                 </a>
-                <a href="#" className="text-gray-400 hover:text-teexho-blue" aria-label="LinkedIn">
-                  <MaterialIcon name="business_center" className="text-[24px]" />
+                <a href="https://www.linkedin.com/company/teexhojames-consulting/" className="text-gray-400 hover:text-teexho-blue" aria-label="LinkedIn">
+                  <svg aria-hidden="true" viewBox="0 0 24 24" className="h-6 w-6 fill-current">
+                    <path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM10 9h3.8v1.7h.05c.53-1 1.82-2.05 3.75-2.05 4.02 0 4.76 2.64 4.76 6.08V21h-4v-5.2c0-1.24-.02-2.84-1.73-2.84-1.73 0-2 1.35-2 2.75V21h-4z" />
+                  </svg>
                 </a>
-                <a href="#" className="text-gray-400 hover:text-teexho-blue" aria-label="YouTube">
-                  <MaterialIcon name="play_circle" className="text-[24px]" />
-                </a>
-                <a href="#" className="text-gray-400 hover:text-teexho-blue" aria-label="Instagram">
-                  <MaterialIcon name="photo_camera" className="text-[24px]" />
+                <a href="https://www.instagram.com/teexhojamesconsult" className="text-gray-400 hover:text-teexho-blue" aria-label="Instagram">
+                  <svg aria-hidden="true" viewBox="0 0 24 24" className="h-6 w-6 fill-current">
+                    <path d="M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4zm10 2H7a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2zm-5 3.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 8.5zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 10.5zm5.25-3.25a1 1 0 1 1-1 1 1 1 0 0 1 1-1z" />
+                  </svg>
                 </a>
               </div>
             </div>

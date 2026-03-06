@@ -26,6 +26,11 @@ const serviceLinks = [
     href: "/services/business-strategy",
   },
   {
+    title: "Sub-Saharan Operations",
+    description: "Regional expansion support, local execution, and operational advisory.",
+    href: "/services/sub-saharan-operations",
+  },
+  {
     title: "UK Admissions",
     description: "End-to-end guidance for UK university applications.",
     href: "/services/uk-admissions",

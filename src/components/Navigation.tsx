@@ -10,6 +10,17 @@ const navLinks = [
   { name: "Get Started", href: "/contact" },
 ];
 
+const solutionsLinks = [
+  { name: "Education Consulting", href: "/services/education-consulting" },
+  { name: "Digital Solutions", href: "/services/digital-solutions" },
+  { name: "IT Consulting", href: "/services/it-consulting" },
+  { name: "Business Strategy", href: "/services/business-strategy" },
+  { name: "Sub-Saharan Operations", href: "/services/sub-saharan-operations" },
+  { name: "UK Admissions", href: "/services/uk-admissions" },
+  { name: "Europe Admissions", href: "/services/europe-admissions" },
+  { name: "Student Visa Support", href: "/services/student-visa" },
+];
+
 export function Navigation() {
   const [mobileOpen, setMobileOpen] = useState(false);
   return (
@@ -25,17 +36,46 @@ export function Navigation() {
         {/* Desktop Nav */}
         <nav className="hidden lg:flex items-center gap-2 lg:gap-4 ml-auto">
           {navLinks.slice(0, -1).map(link => (
-            <a
-              key={link.name}
-              href={link.href}
-              className="text-[#1a1a1a] text-base px-3 py-2 font-medium relative group transition-colors duration-200"
-              style={{ fontFamily: 'Rethink Sans, system-ui, sans-serif' }}
-            >
-              <span className="relative">
-                {link.name}
-                <span className="absolute left-0 right-0 -bottom-0.5 h-px bg-[#1a1a1a] scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-200" />
-              </span>
-            </a>
+            link.name === "Our Solutions" ? (
+              <div key={link.name} className="relative group">
+                <a
+                  href={link.href}
+                  className="text-[#1a1a1a] text-base px-3 py-2 font-medium relative group transition-colors duration-200 inline-flex items-center gap-2"
+                  style={{ fontFamily: 'Rethink Sans, system-ui, sans-serif' }}
+                >
+                  <span className="relative">
+                    {link.name}
+                    <span className="absolute left-0 right-0 -bottom-0.5 h-px bg-[#1a1a1a] scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-200" />
+                  </span>
+                  <span className="text-xs">▾</span>
+                </a>
+                <div className="absolute left-0 top-full mt-2 w-72 rounded-xl border border-gray-100 bg-white shadow-xl opacity-0 translate-y-2 pointer-events-none transition-all duration-200 group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto">
+                  <div className="p-3">
+                    {solutionsLinks.map(solution => (
+                      <a
+                        key={solution.name}
+                        href={solution.href}
+                        className="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-teexho-blue transition-colors"
+                      >
+                        {solution.name}
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ) : (
+              <a
+                key={link.name}
+                href={link.href}
+                className="text-[#1a1a1a] text-base px-3 py-2 font-medium relative group transition-colors duration-200"
+                style={{ fontFamily: 'Rethink Sans, system-ui, sans-serif' }}
+              >
+                <span className="relative">
+                  {link.name}
+                  <span className="absolute left-0 right-0 -bottom-0.5 h-px bg-[#1a1a1a] scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-200" />
+                </span>
+              </a>
+            )
           ))}
           <Button href="/contact" variant="primary">
             Get Started
@@ -45,17 +85,46 @@ export function Navigation() {
         {/* Tablet Compact Nav */}
         <nav className="hidden md:flex lg:hidden items-center gap-1 ml-auto">
           {navLinks.slice(0, -1).map(link => (
-            <a
-              key={link.name}
-              href={link.href}
-              className="text-[#1a1a1a] text-sm px-2 py-1 font-medium relative group transition-colors duration-200"
-              style={{ fontFamily: 'Rethink Sans, system-ui, sans-serif' }}
-            >
-              <span className="relative">
-                {link.name}
-                <span className="absolute left-0 right-0 -bottom-0.5 h-px bg-[#1a1a1a] scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-200" />
-              </span>
-            </a>
+            link.name === "Our Solutions" ? (
+              <div key={link.name} className="relative group">
+                <a
+                  href={link.href}
+                  className="text-[#1a1a1a] text-sm px-2 py-1 font-medium relative group transition-colors duration-200 inline-flex items-center gap-1"
+                  style={{ fontFamily: 'Rethink Sans, system-ui, sans-serif' }}
+                >
+                  <span className="relative">
+                    {link.name}
+                    <span className="absolute left-0 right-0 -bottom-0.5 h-px bg-[#1a1a1a] scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-200" />
+                  </span>
+                  <span className="text-[10px]">▾</span>
+                </a>
+                <div className="absolute left-0 top-full mt-2 w-64 rounded-xl border border-gray-100 bg-white shadow-xl opacity-0 translate-y-2 pointer-events-none transition-all duration-200 group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto">
+                  <div className="p-2">
+                    {solutionsLinks.map(solution => (
+                      <a
+                        key={solution.name}
+                        href={solution.href}
+                        className="block rounded-lg px-3 py-2 text-xs text-gray-700 hover:bg-gray-50 hover:text-teexho-blue transition-colors"
+                      >
+                        {solution.name}
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ) : (
+              <a
+                key={link.name}
+                href={link.href}
+                className="text-[#1a1a1a] text-sm px-2 py-1 font-medium relative group transition-colors duration-200"
+                style={{ fontFamily: 'Rethink Sans, system-ui, sans-serif' }}
+              >
+                <span className="relative">
+                  {link.name}
+                  <span className="absolute left-0 right-0 -bottom-0.5 h-px bg-[#1a1a1a] scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-200" />
+                </span>
+              </a>
+            )
           ))}
           <Button href="/contact" variant="primary" className="px-3 py-1 text-sm">
             Get Started
@@ -108,20 +177,53 @@ export function Navigation() {
           {/* Menu Items */}
           <nav className="flex flex-col p-4 sm:p-6 space-y-1 sm:space-y-2">
             {navLinks.slice(0, -1).map((link, index) => (
-              <a
-                key={link.name}
-                href={link.href}
-                className={`text-[#1a1a1a] text-base sm:text-lg font-medium px-3 sm:px-4 py-2 sm:py-3 rounded-lg transition-all duration-200 hover:bg-gray-100 hover:text-teexho-blue transform hover:translate-x-1 ${
-                  mobileOpen ? 'animate-slide-in' : ''
-                }`}
-                style={{ 
-                  animationDelay: mobileOpen ? `${index * 100}ms` : '0ms',
-                  animationFillMode: 'both'
-                }}
-                onClick={() => setMobileOpen(false)}
-              >
-                {link.name}
-              </a>
+              link.name === "Our Solutions" ? (
+                <div key={link.name} className="space-y-2">
+                  <a
+                    href={link.href}
+                    className={`text-[#1a1a1a] text-base sm:text-lg font-medium px-3 sm:px-4 py-2 sm:py-3 rounded-lg transition-all duration-200 hover:bg-gray-100 hover:text-teexho-blue transform hover:translate-x-1 ${
+                      mobileOpen ? 'animate-slide-in' : ''
+                    }`}
+                    style={{
+                      animationDelay: mobileOpen ? `${index * 100}ms` : '0ms',
+                      animationFillMode: 'both'
+                    }}
+                    onClick={() => setMobileOpen(false)}
+                  >
+                    {link.name}
+                  </a>
+                  <div className={`ml-3 flex flex-col ${mobileOpen ? 'animate-slide-in' : ''}`} style={{
+                    animationDelay: mobileOpen ? `${(index + 0.5) * 100}ms` : '0ms',
+                    animationFillMode: 'both'
+                  }}>
+                    {solutionsLinks.map(solution => (
+                      <a
+                        key={solution.name}
+                        href={solution.href}
+                        className="text-sm text-gray-600 px-3 py-2 rounded-lg hover:bg-gray-100 hover:text-teexho-blue transition-colors"
+                        onClick={() => setMobileOpen(false)}
+                      >
+                        {solution.name}
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              ) : (
+                <a
+                  key={link.name}
+                  href={link.href}
+                  className={`text-[#1a1a1a] text-base sm:text-lg font-medium px-3 sm:px-4 py-2 sm:py-3 rounded-lg transition-all duration-200 hover:bg-gray-100 hover:text-teexho-blue transform hover:translate-x-1 ${
+                    mobileOpen ? 'animate-slide-in' : ''
+                  }`}
+                  style={{
+                    animationDelay: mobileOpen ? `${index * 100}ms` : '0ms',
+                    animationFillMode: 'both'
+                  }}
+                  onClick={() => setMobileOpen(false)}
+                >
+                  {link.name}
+                </a>
+              )
             ))}
             
             {/* CTA Button */}

@@ -102,7 +102,7 @@ export default function ContactClient() {
                     <MaterialIcon name="call" className="text-xl text-gray-400 flex-shrink-0" />
                     <div>
                       <p className="text-gray-700 font-medium">Phone</p>
-                      <p className="text-gray-600">+234 706 701 3634</p>
+                      <p className="text-gray-600">+447703293677</p>
                     </div>
                   </div>
 
@@ -137,7 +137,7 @@ export default function ContactClient() {
                     value={formState.fullName}
                     onChange={handleChange}
                     required
-                    className="w-full px-3 md:px-4 py-2 md:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teexho-blue focus:border-transparent text-sm md:text-base"
+                    className="w-full px-3 md:px-4 py-2 md:py-3 border-0 border-b border-gray-300 rounded-none focus:ring-0 focus:border-teexho-blue text-sm md:text-base bg-transparent"
                     placeholder="Enter your full name"
                   />
                 </div>
@@ -153,7 +153,7 @@ export default function ContactClient() {
                     value={formState.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-3 md:px-4 py-2 md:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teexho-blue focus:border-transparent text-sm md:text-base"
+                    className="w-full px-3 md:px-4 py-2 md:py-3 border-0 border-b border-gray-300 rounded-none focus:ring-0 focus:border-teexho-blue text-sm md:text-base bg-transparent"
                     placeholder="Enter your email"
                   />
                 </div>
@@ -170,7 +170,7 @@ export default function ContactClient() {
                     name="company"
                     value={formState.company}
                     onChange={handleChange}
-                    className="w-full px-3 md:px-4 py-2 md:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teexho-blue focus:border-transparent text-sm md:text-base"
+                    className="w-full px-3 md:px-4 py-2 md:py-3 border-0 border-b border-gray-300 rounded-none focus:ring-0 focus:border-teexho-blue text-sm md:text-base bg-transparent"
                     placeholder="Enter your company name"
                   />
                 </div>
@@ -185,7 +185,7 @@ export default function ContactClient() {
                     name="phone"
                     value={formState.phone}
                     onChange={handleChange}
-                    className="w-full px-3 md:px-4 py-2 md:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teexho-blue focus:border-transparent text-sm md:text-base"
+                    className="w-full px-3 md:px-4 py-2 md:py-3 border-0 border-b border-gray-300 rounded-none focus:ring-0 focus:border-teexho-blue text-sm md:text-base bg-transparent"
                     placeholder="Enter your phone number"
                   />
                 </div>
@@ -200,7 +200,7 @@ export default function ContactClient() {
                   name="services"
                   value={formState.services}
                   onChange={handleChange}
-                  className="w-full px-3 md:px-4 py-2 md:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teexho-blue focus:border-transparent text-sm md:text-base"
+                  className="w-full px-3 md:px-4 py-2 md:py-3 border-0 border-b border-gray-300 rounded-none focus:ring-0 focus:border-teexho-blue text-sm md:text-base bg-transparent"
                 >
                   <option value="">Select a service</option>
                   <option value="education-consulting">Education Consulting</option>
@@ -219,7 +219,7 @@ export default function ContactClient() {
                   name="hearAbout"
                   value={formState.hearAbout}
                   onChange={handleChange}
-                  className="w-full px-3 md:px-4 py-2 md:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teexho-blue focus:border-transparent text-sm md:text-base"
+                  className="w-full px-3 md:px-4 py-2 md:py-3 border-0 border-b border-gray-300 rounded-none focus:ring-0 focus:border-teexho-blue text-sm md:text-base bg-transparent"
                 >
                   <option value="">Select an option</option>
                   <option value="search">Search Engine</option>
@@ -241,7 +241,7 @@ export default function ContactClient() {
                   value={formState.message}
                   onChange={handleChange}
                   required
-                  className="w-full px-3 md:px-4 py-2 md:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teexho-blue focus:border-transparent text-sm md:text-base"
+                  className="w-full px-3 md:px-4 py-2 md:py-3 border-0 border-b border-gray-300 rounded-none focus:ring-0 focus:border-teexho-blue text-sm md:text-base bg-transparent"
                   placeholder="Enter your message"
                 ></textarea>
               </div>
